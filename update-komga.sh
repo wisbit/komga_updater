@@ -28,6 +28,8 @@ if (( ${found} == 0  )); then
 fi
 if (( ${archives} == 0  )); then
        sudo mkdir archives;
+       sudo chown $USER:$USER archives;
+       sudo chmod 755 archives;
 fi
 
 
